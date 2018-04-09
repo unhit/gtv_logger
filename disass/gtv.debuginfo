@@ -1,0 +1,187 @@
+
+../../gtv.run:     file format elf32-i386
+
+/tmp/glibc-2.1.3/csu/init.c:
+typedef int32 int;
+typedef int8 char;
+typedef int32 long int;
+typedef uint32 unsigned int;
+typedef uint32 long unsigned int;
+typedef range (int):0x0000000000000000:0x0000000000000000 long long int;
+typedef range (int):0x0000000000000000:0x0000000000000000 long long unsigned int;
+typedef int16 short int;
+typedef uint16 short unsigned int;
+typedef int8 signed char;
+typedef uint8 unsigned char;
+typedef float float;
+typedef double double;
+typedef float96 long double;
+typedef struct %anon1 { /* size 8 */
+  int real; /* bitsize 0x0000000000000020, bitpos 0x0000000000000000 */
+  int imag; /* bitsize 0x0000000000000020, bitpos 0x0000000000000020 */
+} complex int;
+typedef complex float complex float;
+typedef complex double complex double;
+typedef complex float96 complex long double;
+typedef void void;
+int _IO_stdin_used /* 0x0000000008085944 */;
+struct _pthread_descr_struct { /* id 0 */
+};
+struct locale_data { /* id 0 */
+};
+ ../include/libc-symbols.h:
+ ../config.h:
+ ../include/libintl.h:
+ ../intl/libintl.h:
+ ../include/features.h:
+ ../include/sys/cdefs.h:
+ ../misc/sys/cdefs.h:
+ /usr/lib/gcc-lib/i386-slackware-linux/egcs-2.91.66/include/stddef.h:
+typedef unsigned int size_t;
+typedef long int wchar_t;
+typedef unsigned int wint_t;
+ ../include/locale.h:
+ ../locale/locale.h:
+struct lconv { /* size 48 id 2 */
+  char *decimal_point; /* bitsize 0x0000000000000020, bitpos 0x0000000000000000 */
+  char *thousands_sep; /* bitsize 0x0000000000000020, bitpos 0x0000000000000020 */
+  char *grouping; /* bitsize 0x0000000000000020, bitpos 0x0000000000000040 */
+  char *int_curr_symbol; /* bitsize 0x0000000000000020, bitpos 0x0000000000000060 */
+  char *currency_symbol; /* bitsize 0x0000000000000020, bitpos 0x0000000000000080 */
+  char *mon_decimal_point; /* bitsize 0x0000000000000020, bitpos 0x00000000000000a0 */
+  char *mon_thousands_sep; /* bitsize 0x0000000000000020, bitpos 0x00000000000000c0 */
+  char *mon_grouping; /* bitsize 0x0000000000000020, bitpos 0x00000000000000e0 */
+  char *positive_sign; /* bitsize 0x0000000000000020, bitpos 0x0000000000000100 */
+  char *negative_sign; /* bitsize 0x0000000000000020, bitpos 0x0000000000000120 */
+  char int_frac_digits; /* bitsize 0x0000000000000008, bitpos 0x0000000000000140 */
+  char frac_digits; /* bitsize 0x0000000000000008, bitpos 0x0000000000000148 */
+  char p_cs_precedes; /* bitsize 0x0000000000000008, bitpos 0x0000000000000150 */
+  char p_sep_by_space; /* bitsize 0x0000000000000008, bitpos 0x0000000000000158 */
+  char n_cs_precedes; /* bitsize 0x0000000000000008, bitpos 0x0000000000000160 */
+  char n_sep_by_space; /* bitsize 0x0000000000000008, bitpos 0x0000000000000168 */
+  char p_sign_posn; /* bitsize 0x0000000000000008, bitpos 0x0000000000000170 */
+  char n_sign_posn; /* bitsize 0x0000000000000008, bitpos 0x0000000000000178 */
+};
+ ../include/xlocale.h:
+ ../locale/xlocale.h:
+struct __locale_struct { /* size 36 id 3 */
+  struct locale_data /* id 0 */ *__locales[0x0000000000000006]; /* bitsize 0x00000000000000c0, bitpos 0x0000000000000000 */
+  short unsigned int *__ctype_b; /* bitsize 0x0000000000000020, bitpos 0x00000000000000c0 */
+  int *__ctype_tolower; /* bitsize 0x0000000000000020, bitpos 0x00000000000000e0 */
+  int *__ctype_toupper; /* bitsize 0x0000000000000020, bitpos 0x0000000000000100 */
+};
+typedef struct __locale_struct /* id 3 */ *__locale_t;
+ ../sysdeps/unix/sysv/linux/_G_config.h:
+typedef short int _G_int16_t;
+typedef int _G_int32_t;
+typedef short unsigned int _G_uint16_t;
+typedef unsigned int _G_uint32_t;
+ ../sysdeps/unix/sysv/linux/bits/types.h:
+typedef unsigned char __u_char;
+typedef short unsigned int __u_short;
+typedef unsigned int __u_int;
+typedef long unsigned int __u_long;
+typedef long long unsigned int __u_quad_t;
+typedef long long int __quad_t;
+typedef signed char __int8_t;
+typedef unsigned char __uint8_t;
+typedef short int __int16_t;
+typedef short unsigned int __uint16_t;
+typedef int __int32_t;
+typedef unsigned int __uint32_t;
+typedef long long int __int64_t;
+typedef long long unsigned int __uint64_t;
+typedef __quad_t *__qaddr_t;
+typedef __u_quad_t __dev_t;
+typedef __u_int __uid_t;
+typedef __u_int __gid_t;
+typedef __u_long __ino_t;
+typedef __u_int __mode_t;
+typedef __u_int __nlink_t;
+typedef long int __off_t;
+typedef __quad_t __loff_t;
+typedef int __pid_t;
+typedef int __ssize_t;
+typedef __u_long __rlim_t;
+typedef __u_quad_t __rlim64_t;
+typedef __u_int __id_t;
+typedef struct %anon4 { /* size 8 */
+  int __val[0x0000000000000002]; /* bitsize 0x0000000000000040, bitpos 0x0000000000000000 */
+} __fsid_t;
+typedef int __daddr_t;
+typedef char *__caddr_t;
+typedef long int __time_t;
+typedef long int __swblk_t;
+typedef long int __clock_t;
+typedef long unsigned int __fd_mask;
+typedef struct %anon5 { /* size 128 */
+  __fd_mask fds_bits[0x0000000000000020]; /* bitsize 0x0000000000000400, bitpos 0x0000000000000000 */
+} __fd_set;
+typedef int __key_t;
+typedef short unsigned int __ipc_pid_t;
+typedef long int __blkcnt_t;
+typedef __quad_t __blkcnt64_t;
+typedef __u_long __fsblkcnt_t;
+typedef __u_quad_t __fsblkcnt64_t;
+typedef __u_long __fsfilcnt_t;
+typedef __u_quad_t __fsfilcnt64_t;
+typedef __u_long __ino64_t;
+typedef __loff_t __off64_t;
+typedef long int __t_scalar_t;
+typedef long unsigned int __t_uscalar_t;
+typedef int __intptr_t;
+ ../linuxthreads/sysdeps/pthread/bits/pthreadtypes.h:
+struct _pthread_fastlock { /* size 8 id 6 */
+  long int __status; /* bitsize 0x0000000000000020, bitpos 0x0000000000000000 */
+  int __spinlock; /* bitsize 0x0000000000000020, bitpos 0x0000000000000020 */
+};
+typedef struct _pthread_descr_struct /* id 0 */ *_pthread_descr;
+typedef struct %anon7 { /* size 36 */
+  int __detachstate; /* bitsize 0x0000000000000020, bitpos 0x0000000000000000 */
+  int __schedpolicy; /* bitsize 0x0000000000000020, bitpos 0x0000000000000020 */
+  struct __sched_param /* id 8 */ __schedparam; /* bitsize 0x0000000000000020, bitpos 0x0000000000000040 */
+  int __inheritsched; /* bitsize 0x0000000000000020, bitpos 0x0000000000000060 */
+  int __scope; /* bitsize 0x0000000000000020, bitpos 0x0000000000000080 */
+  size_t __guardsize; /* bitsize 0x0000000000000020, bitpos 0x00000000000000a0 */
+  int __stackaddr_set; /* bitsize 0x0000000000000020, bitpos 0x00000000000000c0 */
+  void *__stackaddr; /* bitsize 0x0000000000000020, bitpos 0x00000000000000e0 */
+  size_t __stacksize; /* bitsize 0x0000000000000020, bitpos 0x0000000000000100 */
+} pthread_attr_t;
+typedef struct %anon9 { /* size 12 */
+  struct _pthread_fastlock /* id 6 */ __c_lock; /* bitsize 0x0000000000000040, bitpos 0x0000000000000000 */
+  _pthread_descr __c_waiting; /* bitsize 0x0000000000000020, bitpos 0x0000000000000040 */
+} pthread_cond_t;
+typedef struct %anon10 { /* size 4 */
+  int __dummy; /* bitsize 0x0000000000000020, bitpos 0x0000000000000000 */
+} pthread_condattr_t;
+typedef unsigned int pthread_key_t;
+typedef struct %anon11 { /* size 24 */
+  int __m_reserved; /* bitsize 0x0000000000000020, bitpos 0x0000000000000000 */
+  int __m_count; /* bitsize 0x0000000000000020, bitpos 0x0000000000000020 */
+  _pthread_descr __m_owner; /* bitsize 0x0000000000000020, bitpos 0x0000000000000040 */
+  int __m_kind; /* bitsize 0x0000000000000020, bitpos 0x0000000000000060 */
+  struct _pthread_fastlock /* id 6 */ __m_lock; /* bitsize 0x0000000000000040, bitpos 0x0000000000000080 */
+} pthread_mutex_t;
+typedef struct %anon12 { /* size 4 */
+  int __mutexkind; /* bitsize 0x0000000000000020, bitpos 0x0000000000000000 */
+} pthread_mutexattr_t;
+typedef int pthread_once_t;
+struct _pthread_rwlock_t { /* size 32 id 13 */
+  struct _pthread_fastlock /* id 6 */ __rw_lock; /* bitsize 0x0000000000000040, bitpos 0x0000000000000000 */
+  int __rw_readers; /* bitsize 0x0000000000000020, bitpos 0x0000000000000040 */
+  _pthread_descr __rw_writer; /* bitsize 0x0000000000000020, bitpos 0x0000000000000060 */
+  _pthread_descr __rw_read_waiting; /* bitsize 0x0000000000000020, bitpos 0x0000000000000080 */
+  _pthread_descr __rw_write_waiting; /* bitsize 0x0000000000000020, bitpos 0x00000000000000a0 */
+  int __rw_kind; /* bitsize 0x0000000000000020, bitpos 0x00000000000000c0 */
+  int __rw_pshared; /* bitsize 0x0000000000000020, bitpos 0x00000000000000e0 */
+};
+typedef struct _pthread_rwlock_t /* id 13 */ pthread_rwlock_t;
+typedef struct %anon14 { /* size 8 */
+  int __lockkind; /* bitsize 0x0000000000000020, bitpos 0x0000000000000000 */
+  int __pshared; /* bitsize 0x0000000000000020, bitpos 0x0000000000000020 */
+} pthread_rwlockattr_t;
+typedef long unsigned int pthread_t;
+ ../sysdeps/unix/sysv/linux/bits/sched.h:
+struct __sched_param { /* size 4 id 8 */
+  int sched_priority; /* bitsize 0x0000000000000020, bitpos 0x0000000000000000 */
+};

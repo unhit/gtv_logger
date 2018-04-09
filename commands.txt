@@ -1,0 +1,15 @@
+Admin commands:
+
+- /gtv_adv_enable [0|1]
+Start/stop advertising
+- /gtv_adv_interval [x]
+Set advertising interval to x
+- /gtv_adv_method [bigtext|chat|print]
+Change advertising method
+- /gtv_adv_message [message]
+Change advertising message
+
+- /gtv_adm_enable [0|1]
+Disable/enable extended admin chat
+- /gtv_adm_method [bigtext|chat|print]
+Change ext. admin chat method

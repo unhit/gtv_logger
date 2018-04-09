@@ -1,0 +1,22 @@
+// user which runs GTV server should have write permissions to log file
+log_file_name = "gtv_logger.log"
+// consider setting this option to "yes" when you encounter
+// serious performance issues
+buffered_logging = "no"
+// log destination: 1 = stdout, 2 = log file, any other value (eg. 0) = both log and stdout
+log_destination = "0"
+// strips colors from nicknames
+strip_colors = "no"
+
+// MESSAGES
+// welcome message (instead of "Welcome to GTV 3.0f")
+msg_welcome = "^5Welcome to UrT GTV\n^1Visit ^2yourwebsite.com"
+msg_example = "\n^2Type ^1/gtv_watch 2^2 to start the stream"
+
+// ADVERTISER
+adv_enable = "no"
+// available methods: print, chat, bigtext
+adv_method = "chat"
+// advertising interval in seconds
+adv_interval = "60"
+adv_message = "^3(^2ADV^3) ^4Your wonderful advert"

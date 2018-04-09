@@ -1,0 +1,36 @@
+<b>@@@ 0.6 @@@</b>
+=== 06.04.2011 ===
+- saving registers when calling orig. functions
+=== 04.04.2011 ===
+- extended admin chat: admin messages can be shown additionally as print/bigtext/chat
+<b>@@@ 0.5 @@@</b>
+=== 24.03.2011 ===
+- logging client disconnect (for whatever reason ie. quit, kick, timeout, etc)
+- logging client connect
+- logging bans
+- possibility to choose logging destination (file, stdout, both)
+- fixed unwanted behaviour when some cfg options were missing
+=== 23.03.2011 ===
+- fixed display of months (remember kids... January is 0th month)
+=== 21.03.2011 ===
+- possibility to change adv parameters directly from console (if user is logged in as an admin)
+=== 20.03.2011 ===
+- added advertising via print, chat or bigtext
+- reliable way of detecting admins
+<b>@@@ 0.4 @@@</b>
+=== 19.03.2011 ===
+- logging client IDs
+- logging admins and cameramen
+<b>@@@ 0.3.1 @@@</b>
+=== 18.03.2011 ===
+- intercepting admin password (what a pain...)
+- possibility to change some built-in messages (eg. "Welcome to GTV ...")
+<b>@@@ 0.3 @@@</b>
+- (un)buffered logging
+- added configuration file parsing (liblcfg)
+- stripping colors in nicknames (as an option)
+- added prefixes to console/log messages for easier parsing
+- removed trailing \n from chat messages
+=== 17.03.2011 ===
+<b>@@@ 0.2 @@@</b>
+- fixed handling of invalid nicknames, which caused segfault
